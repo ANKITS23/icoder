@@ -5,14 +5,14 @@ import { useEffect } from "react";
 
 
 export default function Data(props) {
-
+  
    <div>
-    <Fetch1/>
+    const element = <Fetch1 name="sara"/>;
    </div>
 
 }
-  const Fetch1 = () => {
-  
+  const Fetch1 = (props) => {
+    
     const getUsers = async () => {
       const response =  await fetch('https://api.github.com/users');
   
@@ -30,7 +30,7 @@ export default function Data(props) {
         <div className="wrapper ">
           <div className=" data-container dark:bg-black">
 
-   <h1>Proccess data</h1>
+   <h1>hello,{props.name}</h1>
             </div>
             </div>
             </div>

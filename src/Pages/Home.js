@@ -76,8 +76,8 @@ const BestSeller = () => {
         </h3>
       </div>
       <div className="flex w-full justify-between mt-4">
-        <div className="lg:w-[33.33%] w-1/2 pr-2">
-          <div className="w-full border-2 p-4">
+        <div className="lg:w-[33.33%] w-1/2 pr-2 border-2 p-4">
+          <div className="w-full">
             <a>
               {" "}
               <img
@@ -96,8 +96,8 @@ const BestSeller = () => {
           </div>
         </div>
 
-        <div className="lg:w-[33.33%] w-1/2">
-          <div className="w-full border-2 p-4">
+        <div className="lg:w-[33.33%] w-1/2 border-2 p-4">
+          <div className="w-full">
             <a>
               {" "}
               <img
@@ -108,7 +108,7 @@ const BestSeller = () => {
             </a>
             <div className="flex flex-col items-center text-center gap-2">
               <a>
-                <strong className="text-xl"> Michelin Season Radial </strong>
+                <strong className="text-xl "> Michelin Season Radial </strong>
               </a>
               <span>$189.00</span>
 
@@ -117,8 +117,8 @@ const BestSeller = () => {
           </div>
         </div>
 
-        <div className="lg:w-[33.33%] w-1/2 pr-2">
-          <div className="w-full border-2 p-4">
+        <div className="lg:w-[33.33%] w-1/2 pr-2 border-2 p-4">
+          <div className="w-full">
             <a>
               {" "}
               <img
@@ -137,8 +137,8 @@ const BestSeller = () => {
           </div>
         </div>
 
-        <div className="lg:w-[33.33%] w-1/2">
-          <div className="w-full border-2 p-4">
+        <div className="lg:w-[33.33%] w-1/2 border-2 p-4">
+          <div className="w-full">
             <a>
               {" "}
               <img
@@ -163,11 +163,11 @@ const BestSeller = () => {
 
 const Deal = () => {
   return (
-    <div className="flex justify-between bg-gray-200 mt-5">
-      <div className="w-1/2">
-        <img src="./images/deal-img.webp"></img>
+    <div className="flex justify-between flex-wrap bg-gray-200 mt-5">
+      <div className="w-full md:w-1/2">
+        <img className="w-full block" src="./images/deal-img.webp"></img>
       </div>
-      <div className=" w-1/2 flex flex-col justify-center gap-1 items-center text-center">
+      <div className=" w-full md:w-1/2 py-5 md:py-0 flex flex-col justify-center gap-1 items-center text-center">
         <h2 className="text-3xl"> HOT DEAL TODAY</h2>
         <p className="text-lg">Limited Time ! Hurry Up</p>
         <a>
@@ -193,8 +193,8 @@ const Tools = () => {
           alt="abc" ></img>
           </div>
           <div className=" flex flex-col  text-center justify-between gap-2 w-1/2   ">
-            <span className="text-center  text-xl">Car Exhaust</span>
-            <a className="bg-yellow-300 text-center p-2 mx-5">read more</a>
+            <span className="text-center  text-2xl">Car Exhaust</span>
+            <a className="bg-yellow-300 text-center p-2 mx-7">read more</a>
           </div>
         </li>
 
@@ -207,8 +207,8 @@ const Tools = () => {
           alt="abc" ></img>
           </div>
           <div className=" flex flex-col  text-center justify-between gap-2 w-1/2  ">
-            <span className="text-center  text-xl">Car Wheel</span>
-            <a className="bg-yellow-300 text-center p-2 mx-5">read more</a>
+            <span className="text-center  text-2xl">Car Wheel</span>
+            <a className="bg-yellow-300 text-center p-2 mx-7">read more</a>
           </div>
         </li>
       </ul>

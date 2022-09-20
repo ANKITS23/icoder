@@ -4,20 +4,34 @@ import { NavLink } from "react-router-dom";
 // import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export default function NavBar() {
-
+  const [isNavOpen, setIsNavOpen] = useState(false); 
   return (
     <div className="main-container">
       <div className="wrapper ">
         <div className=" navbar-container  ">
           <nav className="w-full bg-purple-500 shadow py-4">
             <div className="justify-between items-center px-4 mx-auto lg:max-w-7xl  md:items-center md:flex md:px-8">
-              <div className=" md:flex items-center justify-between gap-5 block">
+              <div className=" flex items-center justify-between gap-5">
                 <div className="">
                   <a href="#">
                   <h2 className="text-2xl font-bold text-white ">LOGO</h2>
                   </a>
                 </div>
-                <div className="flex-1 justify-self-center  mt-8 md:block md:pb-0 md:mt-0 ">
+                <section className="MOBILE-MENU md:hidden">
+            
+          <div
+            className="HAMBURGER-ICON space-y-2"
+            onClick={() => setIsNavOpen(!isNavOpen)} // toggle isNavOpen state on click
+          >
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+          </div>
+
+          </section>
+   
+    
+                <div className=" DESKTOP-MENU hidden space-x-8 lg:flex flex-1 justify-self-center  mt-8 md:block md:pb-0 md:mt-0 ">
                   <ul className="items-center justify-center md:flex flex-col md:flex-row gap-7">
                     <li className="text-white hover:text-indigo-200">
                       <NavLink className="navbar-item" to="/">
@@ -41,19 +55,64 @@ export default function NavBar() {
                        Data
                       </NavLink>
                     </li>
+                    <li className="text-white hover:text-indigo-200">
+                      <NavLink className="navbar-item" to="/show">
+                    Show
+                      </NavLink>
+                    </li>
 
                     <li className="">
                   <DarkModeToggles />
                   </li>
                   </ul>
                 </div>
-
-      
               </div>
             </div>
+            {isNavOpen &&
+            <div className="MENU-LINK-MOBILE-OPEN">
+                  <ul className="flex flex-col mt-2 ml-5 w-full  gap-5 justify-between">
+                    <li className="text-white hover:text-indigo-200">
+                      <NavLink className="navbar-item" to="/">
+                        Home
+                      </NavLink>
+                    </li>
+
+                    <li className="text-white hover:text-indigo-200">
+                      <NavLink className="navbar-item" to="/about">
+                        About
+                      </NavLink>
+                    </li>
+
+                    <li className="text-white hover:text-indigo-200">
+                      <NavLink className="navbar-item" to="/contact">
+                        Contact Us
+                      </NavLink>
+                    </li>
+                    <li className="text-white hover:text-indigo-200">
+                      <NavLink className="navbar-item" to="/data">
+                       Data
+                      </NavLink>
+                    </li>
+                    <li className="text-white hover:text-indigo-200">
+                      <NavLink className="navbar-item" to="/show">
+                    Show
+                      </NavLink>
+                    </li>
+
+
+                    <li className="">
+                  <DarkModeToggles />
+                  </li>
+                  </ul>
+                </div>
+}
+     
           </nav>
         </div>
       </div>
+ 
     </div>
   );
 }
+
+

@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Data from "./Pages/data";
+import Show from "./Pages/prop";
 
 const App  = () => {
   return (
@@ -32,6 +33,7 @@ function Path() {
       <Route path="/about" element={<About />} />  
       <Route path="/contact" element={<Contact />} />  
       <Route path="/data" element={<Data />} />  
+      <Route path="/show" element={<Show />} />  
     </Route>
   </Routes>
 </BrowserRouter>

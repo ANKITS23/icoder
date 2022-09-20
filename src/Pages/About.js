@@ -25,12 +25,12 @@ const Title = () => {
 const Quaility = () => {
   return (
     <div>
-      <div className="flex justify-between gap-5 p-5 ">
-        <div className="w-1/2">
+      <div className="md:flex  justify-between gap-5 p-5 ">
+        <div className="w-full  md:w-1/2 mb-5 md:mb-0">
           <img className="w-full block" src="./images/about-us_1.jpg"></img>
         </div>
 
-        <div className="w-1/2">
+        <div className="w-full  md:w-1/2">
           <h3 className="text-2xl m-0 dark:text-white">The Highest Quality of Products</h3>
           <p className="text-normal mb-5 dark:text-white">
             Nulla auctor mauris ut dui luctus semper. In hac habitasse platea
@@ -43,7 +43,7 @@ const Quaility = () => {
             quis. Suspendisse aliquam leo id neque auctor molestie. Etiam at
             nulla tellus. Nul a dignissim.
           </p>
-          <a className="bg-purple-400 rounded-[10px]  hover:bg-purple-200 py-3 px-5">More</a>
+          <a className="bg-purple-400 rounded-[10px] hover:bg-purple-200  py-3 px-8">More</a>
         </div>
       </div>
     </div>
@@ -53,8 +53,8 @@ const Quaility = () => {
 const Details = () => {
   return (
     <div>
-      <div className="flex justify-between w-full gap-2 mb-5">
-        <div className="flex justify-between gap-2  border-2 p-2" >
+      <div className="md:flex justify-between w-full gap-2 mb-5">
+        <div className="flex justify-between gap-2 w-full md:w-1/2 border-2 p-2 mb-5 md:mb-0" >
           <div className="w-[10%]">
             <img className="w-full block" src="./images/icon-1.png"></img>
           </div>
@@ -69,7 +69,7 @@ const Details = () => {
       
           </div>
         </div>
-        <div className="flex justify-between gap-2 border-2 p-2 ">
+        <div className="flex justify-between w-full md:w-1/2 gap-2 border-2 p-2 ">
           <div className="w-[10%]">
             <img className="w-full block" src="./images/icon-2.png"></img>
           </div>
