@@ -1,6 +1,6 @@
 import { useState } from "react";
 import DarkModeToggles from "./Dark";
-import { NavLink } from "react-router-dom";
+import { NavLink  } from "react-router-dom";
 // import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export default function NavBar() {
@@ -10,15 +10,14 @@ export default function NavBar() {
       <div className="wrapper ">
         <div className=" navbar-container  ">
           <nav className="w-full bg-purple-500 shadow py-4">
-            <div className="justify-between items-center px-4 mx-auto lg:max-w-7xl  md:items-center md:flex md:px-8">
-              <div className=" flex items-center justify-between gap-5">
+            <div className="px-5 ">
+              <div className="flex w-full justify-between items-center gap-5  md:px-8 ">
                 <div className="">
                   <a href="#">
-                  <h2 className="text-2xl font-bold text-white ">LOGO</h2>
+                  <h2 className="text-2xl font-bold text-white">LOGO</h2>
                   </a>
                 </div>
                 <section className="MOBILE-MENU md:hidden">
-            
           <div
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen(!isNavOpen)} // toggle isNavOpen state on click
@@ -67,10 +66,11 @@ export default function NavBar() {
                   </ul>
                 </div>
               </div>
+
             </div>
             {isNavOpen &&
             <div className="MENU-LINK-MOBILE-OPEN">
-                  <ul className="flex flex-col mt-2 ml-5 w-full  gap-5 justify-between">
+                  <ul className="flex  md:hidden flex-col mt-2 ml-5 w-full  gap-5 justify-between">
                     <li className="text-white hover:text-indigo-200">
                       <NavLink className="navbar-item" to="/">
                         Home

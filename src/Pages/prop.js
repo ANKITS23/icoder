@@ -3,8 +3,8 @@
 
     return (
         <div>
-    <h1>Hello, {props.name}</h1>
-    <span>
+    <h1 className="dark:text-white">Hello, {props.name}</h1>
+    <span className="dark:text-gray-500">
        ${props.value}
     </span>
     </div>
