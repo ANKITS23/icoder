@@ -71,33 +71,35 @@ const BestSeller = () => {
   return (
     <div>
       <div>
-        <h3 className="text-4xl  font-extrabold text-center my-0 mx-auto">
+        <h3 className="text-4xl font-extrabold text-center my-0 mx-auto dark:text-white">
           Best Seller
         </h3>
       </div>
-      <div className="flex w-full justify-between mt-4">
-        <div className="lg:w-[33.33%] w-1/2 pr-2 border-2 p-4">
-          <div className="w-full">
-            <a>
+      <div className="flex w-full h-full flex-wrap lg:flex-nowrap justify-between gap-0 lg:gap-5 mt-4">
+        <div className="w-full md:w-1/2 lg:w-[33.33%]  pr-0 md:pr-2 mb-4">
+          <div className="w-full h-full border-2  p-4 flex flex-col justify-between">
+          <div>
+             <a>
               {" "}
               <img
                 className="w-full block"
                 src="./images/wheel-alloy-car2-1.jpg"
                 alt="steering-wheels"
               ></img>
-            </a>
-            <div className="flex flex-col items-center text-center gap-2 ">
+            </a></div>
+            <div className="flex flex-col justify-between text-center gap-2 ">
               <a>
-                <strong className="text-xl">Carbon Steering </strong>
+                <strong className="text-xl dark:text-white">Carbon Steering </strong>
               </a>
-              <span>$99.00</span>
+              <span className="dark:text-gray-200">$99.00</span>
               <button className="bg-yellow-200 py-1 px-3">ADD TO CART </button>
             </div>
           </div>
         </div>
 
-        <div className="lg:w-[33.33%] w-1/2 border-2 p-4">
-          <div className="w-full">
+        <div className="w-full lg:w-[33.33%] md:w-1/2 pl-0 md:pl-2 mb-4">
+          <div className="w-full h-full  border-2 p-4 flex flex-col justify-between">
+            <div>
             <a>
               {" "}
               <img
@@ -106,19 +108,21 @@ const BestSeller = () => {
                 alt="wheelsAccessories"
               ></img>
             </a>
-            <div className="flex flex-col items-center text-center gap-2">
+            </div>
+            <div className="flex flex-col justify-between text-center gap-2">
               <a>
-                <strong className="text-xl "> Michelin Season Radial </strong>
+                <strong className="text-xl dark:text-white"> Michelin Season</strong>
               </a>
-              <span>$189.00</span>
+              <span className="dark:text-gray-200">$189.00</span>
 
               <button className="bg-yellow-200 py-1 px-3">ADD TO CART </button>
             </div>
           </div>
         </div>
 
-        <div className="lg:w-[33.33%] w-1/2 pr-2 border-2 p-4">
-          <div className="w-full">
+        <div className="w-full lg:w-[33.33%] md:w-1/2 h-full pr-0 md:pr-2 mb-4">
+          <div className="w-full border-2 p-4 flex  flex-col justify-between">
+          <div>
             <a>
               {" "}
               <img
@@ -126,19 +130,20 @@ const BestSeller = () => {
                 src="images/wheel-alloy-car_1_8.jpg"
                 alt="Filter Equipment"
               ></img>
-            </a>
-            <div className="flex flex-col items-center text-center gap-2">
+            </a></div>
+            <div className="flex flex-col justify-between text-center gap-2">
               <a>
-                <strong className="text-xl">Road Warrior hUB Pilot</strong>
+                <strong className="text-xl dark:text-white">Road Warrior hUB Pilot</strong>
               </a>
-              <span>$199.00</span>
+              <span className="dark:text-gray-200">$199.00</span>
               <button className="bg-yellow-200 py-1 px-3">ADD TO CART </button>
             </div>
           </div>
         </div>
 
-        <div className="lg:w-[33.33%] w-1/2 border-2 p-4">
-          <div className="w-full">
+        <div className="w-full lg:w-[33.33%] md:w-1/2 h-full pl-0 md:pl-2 mb-4">
+          <div className="w-full border-2 p-4 flex flex-col justify-between ">
+            <div>
             <a>
               {" "}
               <img
@@ -147,11 +152,12 @@ const BestSeller = () => {
                 alt="Jumpar"
               ></img>
             </a>
-            <div className="flex flex-col items-center text-center gap-2">
+            </div>
+            <div className="flex flex-col justify-between text-center gap-2">
               <a>
-                <strong className="text-xl">Road Warrior hUB Pilot</strong>
+                <strong className="text-xl dark:text-white">Road Warrior hUB Pilot</strong>
               </a>
-              <span>$199.00</span>
+              <span className="dark:text-gray-200">$199.00</span>
               <button className="bg-yellow-200 py-1 px-3">ADD TO CART </button>
             </div>
           </div>
@@ -193,8 +199,8 @@ const Tools = () => {
           alt="abc" ></img>
           </div>
           <div className=" flex flex-col  text-center justify-between gap-2 w-1/2   ">
-            <span className="text-center  text-2xl">Car Exhaust</span>
-            <a className="bg-yellow-300 text-center p-2 mx-7">read more</a>
+            <span className="text-center text-lg  md:text-2xl">Car Exhaust</span>
+            <a className="bg-yellow-300 text-center p-2 mx-7">Read more</a>
           </div>
         </li>
 
@@ -208,7 +214,7 @@ const Tools = () => {
           </div>
           <div className=" flex flex-col  text-center justify-between gap-2 w-1/2  ">
             <span className="text-center  text-2xl">Car Wheel</span>
-            <a className="bg-yellow-300 text-center p-2 mx-7">read more</a>
+            <a className="bg-yellow-300 text-center p-2 mx-7">Read more</a>
           </div>
         </li>
       </ul>
