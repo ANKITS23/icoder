@@ -59,6 +59,12 @@ export default function NavBar() {
                     Show
                       </NavLink>
                     </li>
+                    <li className="text-white hover:text-indigo-200">
+                      <NavLink className="navbar-item" to="/charts">
+                    Chart
+                      </NavLink>
+                    </li>
+
 
                     <li className="">
                   <DarkModeToggles />
@@ -98,7 +104,11 @@ export default function NavBar() {
                     Show
                       </NavLink>
                     </li>
-
+                    <li className="text-white hover:text-indigo-200">
+                      <NavLink className="navbar-item" to="/chart">
+                    Chart
+                      </NavLink>
+                    </li>
 
                     <li className="">
                   <DarkModeToggles />

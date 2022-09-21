@@ -8,20 +8,17 @@
        ${props.value}
     </span>
     </div>
-    );
-    
+    );  
   }
-  
   function Show() {
     return (
       <div>
          <div className="main-container">
       <div className="wrapper ">
-        <div className=" Show-container  ">
+        <div className=" Show-container my-5 ">
         <Data name="prop1" value="500"/>
         <Data name="prop2" value="800" />
         <Data name="prop3"value="400" />
-
         </div>
         
         </div>

@@ -7,6 +7,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Data from "./Pages/data";
 import Show from "./Pages/prop";
+import Charts from "./Pages/chart";
 
 const App  = () => {
   return (
@@ -24,7 +25,6 @@ function Path() {
 
 
   return (
-
     <BrowserRouter>
     <NavBar />
   <Routes>
@@ -34,6 +34,7 @@ function Path() {
       <Route path="/contact" element={<Contact />} />  
       <Route path="/data" element={<Data />} />  
       <Route path="/show" element={<Show />} />  
+      <Route path="/charts" element={<Charts />} />  
     </Route>
   </Routes>
 </BrowserRouter>

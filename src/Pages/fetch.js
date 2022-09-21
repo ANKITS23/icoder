@@ -1,28 +1,7 @@
+import React, { Component } from 'react';
 
-import { useEffect } from "react";
 
-export default function Data(props) {
-  
-   <div>
-     <Fetch1/>
-     <Api2/>
-   </div>
 
-}
-  const Fetch1 = () => {
-    
-    const getUsers = async () => {
-      const response =  await fetch('https://api.github.com/users');
-      const  data = await response.json();
-      console.log(data);  
-  }
-      useEffect(() =>{
-        getUsers();
-      });
-    return (
-        <h1>hello</h1> 
-    )
-}
 class Api2 extends Component {
   constructor() {
     super();
@@ -36,7 +15,7 @@ class Api2 extends Component {
         throw Error(response.statusText);
       }
     } catch (error) {
-      console.log(error);
+      console.log("Error come");
     }
 }
 
@@ -56,3 +35,5 @@ class Api2 extends Component {
 }
 
 
+
+export default Api2;

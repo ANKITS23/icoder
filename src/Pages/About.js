@@ -1,4 +1,9 @@
 import { useState } from "react";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
+
+
 export default function About() {
   return (
     <div className="main-container">
@@ -8,6 +13,7 @@ export default function About() {
           <Quaility />
           <Details />
           <AboutInfo />
+          <Date/>
         </div>
       </div>
     </div>
@@ -83,7 +89,6 @@ const Details = () => {
             </p>
           </div>
         </div>
-       
       </div>
     </div>
   );
@@ -148,3 +153,20 @@ const AboutInfo = () => {
     </div>
   );
 };
+
+const Date= () => {
+
+   <Example/>
+   
+};
+
+const Example = () => {
+  const [startDate, setStartDate] = useState(new Date());
+  return (
+   
+    <DatePicker
+ 
+/>
+  );
+};
+

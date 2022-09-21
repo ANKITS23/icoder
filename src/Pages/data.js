@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Api2 from "./fetch.js"
 
 const Fetch = () => {
   const [data, setData] = useState(null);
@@ -24,6 +25,7 @@ const Fetch = () => {
                       </p>
                     </li>
                   </u>
+                  <Api2/>
                 </div>
               </div>
             </div>
@@ -32,4 +34,10 @@ const Fetch = () => {
     </>
   );
 };
+
+
+
+
+
+
 export default Fetch;
