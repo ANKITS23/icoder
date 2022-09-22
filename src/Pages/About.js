@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
@@ -14,6 +15,7 @@ export default function About() {
           <Details />
           <AboutInfo />
           <Date/>
+        
         </div>
       </div>
     </div>
@@ -23,7 +25,7 @@ export default function About() {
 const Title = () => {
   return (
     <div className="bg-slate-400 text-center my-0 mx-auto py-5">
-      <h3 className="text-5xl uppercase">About Us</h3>
+      <h3 className="text-5xl uppercase dark:text-blue-500">About Us</h3>
     </div>
   );
 };
@@ -33,10 +35,10 @@ const Quaility = () => {
     <div>
       <div className="md:flex  justify-between gap-5 p-5 ">
         <div className="w-full  md:w-1/2 mb-5 md:mb-0">
-          <img className="w-full block" src="./images/about-us_1.jpg"></img>
+          <img className="w-full block" src="./images/lap.jpg"></img>
         </div>
 
-        <div className="w-full  md:w-1/2">
+        <div className="w-full flex flex-col justify-between   md:w-1/2">
           <h3 className="text-2xl m-0 dark:text-white">The Highest Quality of Products</h3>
           <p className="text-normal mb-5 dark:text-white">
             Nulla auctor mauris ut dui luctus semper. In hac habitasse platea
@@ -44,12 +46,12 @@ const Quaility = () => {
             non nisl lacus. Integer pharetra lacinia dapibus. Donec eu dolor
             dui, vel posuere mauris. Pellentesque semper congue sodales. In
             consequat, metus eget con sequat ornare, augue dolor blandit purus,
-            vitae lacinia nisi tellus in erat. Nulla ac justo eget massa aliquet
+            vitae lacinia
             sodales. Maecenas mattis male suada sem, in fringilla massa dapibus
             quis. Suspendisse aliquam leo id neque auctor molestie. Etiam at
             nulla tellus. Nul a dignissim.
           </p>
-          <a className="bg-purple-400 rounded-[10px] hover:bg-purple-200  py-3 px-8">More</a>
+          <a className="bg-blue-300  dark:bg-blue-500 rounded-[10px] hover:bg-blue-900 text-center w-[150px] dark:text-white py-3 px-8">More</a>
         </div>
       </div>
     </div>
@@ -164,9 +166,11 @@ const Example = () => {
   const [startDate, setStartDate] = useState(new Date());
   return (
    
-    <DatePicker
- 
-/>
+    <DatePicker/>
   );
 };
+
+
+
+
 

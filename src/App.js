@@ -5,8 +5,6 @@ import Footer from './components/Footer';
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import Data from "./Pages/data";
-import Show from "./Pages/prop";
 import Charts from "./Pages/chart";
 
 const App  = () => {
@@ -32,8 +30,7 @@ function Path() {
       <Route path="/" element={<Home />} />   
       <Route path="/about" element={<About />} />  
       <Route path="/contact" element={<Contact />} />  
-      <Route path="/data" element={<Data />} />  
-      <Route path="/show" element={<Show />} />  
+   
       <Route path="/charts" element={<Charts />} />  
     </Route>
   </Routes>

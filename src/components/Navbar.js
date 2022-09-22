@@ -9,12 +9,13 @@ export default function NavBar() {
     <div className="main-container">
       <div className="wrapper ">
         <div className=" navbar-container  ">
-          <nav className="w-full bg-purple-500 shadow py-4">
+          <nav className="w-full bg-blue-400 dark:bg-blue-800 shadow py-4">
+           
             <div className="px-5 ">
               <div className="flex w-full justify-between items-center gap-5  md:px-8 ">
                 <div className="">
                   <a href="#">
-                  <h2 className="text-2xl font-bold text-white">LOGO</h2>
+                  <h2 className="text-2xl font-bold text-black dark:text-white ">LOGO</h2>
                   </a>
                 </div>
                 <section className="MOBILE-MENU md:hidden">
@@ -32,34 +33,24 @@ export default function NavBar() {
     
                 <div className=" DESKTOP-MENU hidden space-x-8 lg:flex flex-1 justify-self-center  mt-8 md:block md:pb-0 md:mt-0 ">
                   <ul className="items-center justify-center md:flex flex-col md:flex-row gap-7">
-                    <li className="text-white hover:text-indigo-200">
+                    <li className="text-black dark:text-white hover:text-gray-200">
                       <NavLink className="navbar-item" to="/">
                         Home
                       </NavLink>
                     </li>
 
-                    <li className="text-white hover:text-indigo-200">
+                    <li className="text-black dark:text-white hover:text-indigo-200">
                       <NavLink className="navbar-item" to="/about">
                         About
                       </NavLink>
                     </li>
 
-                    <li className="text-white hover:text-indigo-200">
+                    <li className="text-black dark:text-white hover:text-indigo-200">
                       <NavLink className="navbar-item" to="/contact">
                         Contact Us
                       </NavLink>
                     </li>
-                    <li className="text-white hover:text-indigo-200">
-                      <NavLink className="navbar-item" to="/data">
-                       Data
-                      </NavLink>
-                    </li>
-                    <li className="text-white hover:text-indigo-200">
-                      <NavLink className="navbar-item" to="/show">
-                    Show
-                      </NavLink>
-                    </li>
-                    <li className="text-white hover:text-indigo-200">
+                    <li className="text-black dark:text-white hover:text-indigo-200">
                       <NavLink className="navbar-item" to="/charts">
                     Chart
                       </NavLink>
@@ -77,34 +68,24 @@ export default function NavBar() {
             {isNavOpen &&
             <div className="MENU-LINK-MOBILE-OPEN">
                   <ul className="flex  md:hidden flex-col mt-2 ml-5 w-full  gap-5 justify-between">
-                    <li className="text-white hover:text-indigo-200">
+                    <li className="text-black dark:text-white hover:text-indigo-200">
                       <NavLink className="navbar-item" to="/">
                         Home
                       </NavLink>
                     </li>
 
-                    <li className="text-white hover:text-indigo-200">
+                    <li className="text-black dark:text-white hover:text-indigo-200">
                       <NavLink className="navbar-item" to="/about">
                         About
                       </NavLink>
                     </li>
 
-                    <li className="text-white hover:text-indigo-200">
+                    <li className="text-black dark:text-white hover:text-indigo-200">
                       <NavLink className="navbar-item" to="/contact">
                         Contact Us
                       </NavLink>
                     </li>
-                    <li className="text-white hover:text-indigo-200">
-                      <NavLink className="navbar-item" to="/data">
-                       Data
-                      </NavLink>
-                    </li>
-                    <li className="text-white hover:text-indigo-200">
-                      <NavLink className="navbar-item" to="/show">
-                    Show
-                      </NavLink>
-                    </li>
-                    <li className="text-white hover:text-indigo-200">
+                    <li className="text-black dark:text-white hover:text-indigo-200">
                       <NavLink className="navbar-item" to="/chart">
                     Chart
                       </NavLink>
@@ -115,7 +96,7 @@ export default function NavBar() {
                   </li>
                   </ul>
                 </div>
-}
+}  
      
           </nav>
         </div>
